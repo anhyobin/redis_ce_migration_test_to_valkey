@@ -103,7 +103,7 @@ logfile /var/log/redis.log
 
 ```yaml
 Engine: valkey
-Version: 8.0
+Version: 8.2
 Node Type: cache.t3.medium
 Cluster Mode: disabled
 Nodes: 2 (Primary + 1 Replica)
