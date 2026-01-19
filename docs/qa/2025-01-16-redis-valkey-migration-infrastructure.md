@@ -20,7 +20,7 @@
 
 1. **ElastiCache Valkey 엔진 버전**
    - 검증: CloudFormation 템플릿에서 `"Engine": "valkey", "EngineVersion": "8.0"` 확인
-   - 결과: ✅ Valkey 8.0 사용 (Redis OSS 5.0.6+ 요구사항 충족)
+   - 결과: ✅ Valkey 8.2 사용 (Redis OSS 5.0.6+ 요구사항 충족)
 
 2. **Transit Encryption 비활성화**
    - 검증: `"TransitEncryptionEnabled": false` 설정 확인
@@ -135,7 +135,7 @@
 **RECOMMENDATION**: ✅ PROCEED TO DEPLOY
 
 모든 AWS 온라인 마이그레이션 필수 조건이 올바르게 구현되었습니다:
-- Valkey 8.0 엔진 사용 (Redis OSS 5.0.6+ 요구사항 충족)
+- Valkey 8.2 엔진 사용 (Redis OSS 5.0.6+ 요구사항 충족)
 - Transit encryption 비활성화
 - Multi-AZ 활성화
 - Redis 소스 구성 (protected-mode no, bind 0.0.0.0)

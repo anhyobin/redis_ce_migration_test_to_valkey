@@ -32,7 +32,7 @@ Redis to ElastiCache Valkey 온라인 마이그레이션 테스트 환경은 AWS
 │  │  │  │                 │    │    │                 │                  │  │    │
 │  │  │  │ ┌─────────────┐ │    │    │ ┌─────────────┐ │                  │  │    │
 │  │  │  │ │EC2 Instance │ │    │    │ │ElastiCache  │ │                  │  │    │
-│  │  │  │ │Redis 7.4.6  │ │    │    │ │Valkey 8.0   │ │                  │  │    │
+│  │  │  │ │Redis 7.4.6  │ │    │    │ │Valkey 8.2   │ │                  │  │    │
 │  │  │  │ │(소스)       │ │    │    │ │(대상)       │ │                  │  │    │
 │  │  │  │ └─────────────┘ │    │    │ └─────────────┘ │                  │  │    │
 │  │  │  │                 │    │    │                 │                  │  │    │
@@ -96,7 +96,7 @@ logfile /var/log/redis.log
 ### ElastiCache for Valkey (마이그레이션 대상)
 
 **역할**: 마이그레이션 대상 Valkey 클러스터  
-**기술**: Amazon ElastiCache for Valkey 8.0  
+**기술**: Amazon ElastiCache for Valkey 8.2  
 **연동**: Redis 인스턴스로부터 데이터 복제 수신
 
 #### 클러스터 구성
@@ -116,7 +116,7 @@ At-Rest Encryption: disabled
 
 | 결정 | 이유 | 대안 검토 |
 |------|------|----------|
-| Valkey 8.0 엔진 | 최신 오픈소스 Redis 호환 엔진 | Redis 7.x (라이선스 제약), KeyDB (AWS 미지원) |
+| Valkey 8.2 엔진 | 최신 오픈소스 Redis 호환 엔진 | Redis 7.x (라이선스 제약), KeyDB (AWS 미지원) |
 | 암호화 비활성화 | 온라인 마이그레이션 필수 요구사항 | 암호화 활성화 (마이그레이션 불가) |
 | Multi-AZ 활성화 | 고가용성 및 자동 장애 조치 | 단일 AZ (가용성 위험) |
 

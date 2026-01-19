@@ -2,7 +2,7 @@
 
 ## 개요
 
-이 가이드는 Redis 7.4.6에서 ElastiCache for Valkey 8.0으로의 온라인 마이그레이션 과정을 단계별로 설명합니다. AWS ElastiCache의 온라인 마이그레이션 기능을 사용하여 다운타임 없이 안전하게 데이터를 마이그레이션할 수 있습니다.
+이 가이드는 Redis 7.4.6에서 ElastiCache for Valkey 8.2으로의 온라인 마이그레이션 과정을 단계별로 설명합니다. AWS ElastiCache의 온라인 마이그레이션 기능을 사용하여 다운타임 없이 안전하게 데이터를 마이그레이션할 수 있습니다.
 
 ## 마이그레이션 프로세스 개요
 
@@ -453,7 +453,7 @@ done
 echo "새로운 ElastiCache 연결 정보:"
 echo "호스트: $VALKEY_ENDPOINT"
 echo "포트: 6379"
-echo "엔진: Valkey 8.0"
+echo "엔진: Valkey 8.2"
 ```
 
 ### 7.2 성능 테스트

@@ -67,13 +67,13 @@
 ## 주요 변경 사항
 
 ### Valkey 엔진 버전 업데이트
-- **이전**: ElastiCache for Valkey 8.0
+- **이전**: ElastiCache for Valkey 8.2
 - **현재**: ElastiCache for Valkey 8.2
 - **영향**: 최신 기능 및 성능 개선 사항 활용 가능
 - **호환성**: Redis 7.4.6과 완전 호환
 
 ### 문서 업데이트
-- README.md의 모든 Valkey 8.0 참조를 8.2로 업데이트
+- README.md의 모든 Valkey 8.2 참조를 8.2로 업데이트
 - 아키텍처 다이어그램 버전 정보 수정
 - 기술 스택 테이블 업데이트
 
